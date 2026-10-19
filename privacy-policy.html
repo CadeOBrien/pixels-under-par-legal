@@ -36,7 +36,7 @@
 <body>
   <main>
     <h1>Pixels Under Par Privacy Policy</h1>
-    <p><strong>Last updated:</strong> July 25, 2026</p>
+    <p><strong>Last updated:</strong> 19 October 2026</p>
 
     <p>
       This Privacy Policy explains how Pixels Under Par collects, uses, and protects information when you play the game.
@@ -67,6 +67,11 @@
       provided by Unity Technologies and are subject to Unity's own privacy terms and policies. LevelPlay may use
       additional advertising partners to provide an ad.
     </p>
+    <p>
+      The iOS game uses Google's User Messaging Platform (UMP) to present advertising privacy messages and manage
+      consent choices. Google processes information needed to provide these forms, as described in
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+    </p>
 
     <h2>Advertising and Tracking</h2>
     <p>
@@ -75,10 +80,16 @@
       derived from an IP address, and ad interaction or performance information to deliver, limit, secure, and measure ads.
     </p>
     <p>
-      Before advertising starts, the game asks you to choose personalised or limited ads. Personalised ads require your
-      consent and, on supported Apple devices, Apple's tracking permission. Limited ads tell supported advertising
-      partners not to use your data for personalised advertising or cross-app tracking. You can change this choice from
-      Options at any time. Denying tracking does not prevent you from playing, including offline.
+      Before requesting ads, the iOS game checks your advertising privacy status with Google UMP and displays any
+      required privacy forms. Your choices are passed to supported advertising partners through Unity LevelPlay.
+      Where required, you can review or withdraw consent using Ad Privacy in Options. If a privacy check fails and UMP
+      does not permit ad requests, the game continues without requesting ads. Choosing non-personalised ads does not
+      prevent all processing of device or advertising information.
+    </p>
+    <p>
+      Cross-app tracking on supported Apple devices requires Apple's tracking permission separately from advertising
+      consent. Denying consent or tracking permission does not prevent you from playing, including offline. The game
+      also sends a do-not-sell-or-share signal to supported advertising partners.
     </p>
 
     <h2>Cloud Saves and Leaderboards</h2>
@@ -91,8 +102,7 @@
     <p>
       We do not directly sell your personal information. Data may be processed by Unity Gaming Services and advertising
       partners as needed to provide account, cloud save, leaderboard, advertising, fraud prevention, and related game
-      functionality. When you choose limited ads or deny Apple tracking permission, the game sends supported privacy
-      opt-out signals to LevelPlay before requesting ads.
+      functionality. The game sends supported privacy opt-out signals to LevelPlay before requesting ads.
     </p>
 
     <h2>Children's Privacy</h2>
